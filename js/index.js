@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
   init();
+
+//   var items = [
+//   [" ", " ", " ", " "],
+//   [" ", " ", " ", " "],
+//   [" ", " ", " ", " "],
+//   [" ", " ", " ", " "]
+// ];
+
   function init(){
     var setwords = ["NOT","OUT","NUT","UNTO"];
     var letters = ["N","O", "U", "T"];
@@ -43,8 +51,9 @@ $(document).ready(function() {
     function checkWord(word){
       for (var i = 0; i < setwords.length; i++) {
         if (word == setwords[i]){
-          word = clearButton(word);
           setwords.splice(i, word);
+          word = clearButton(word);
+          // reread splice
           // remove word from array
 //          display_word(word);
         }

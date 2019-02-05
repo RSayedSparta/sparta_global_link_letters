@@ -25,7 +25,7 @@ $(document).ready(function() {
         word_select += String(this.innerText);
         $(".display_letters").html(word_select);
         console.log(word_select);
-        word_select = checkWord(word_select);
+        checkWord(word_select);
         console.log(setwords);
       });
 
@@ -33,7 +33,6 @@ $(document).ready(function() {
       $("button").click(function(){
         word_select = clearButton(word_select);
       });
-
     }
 
 
@@ -54,11 +53,16 @@ $(document).ready(function() {
         if (word == setwords[i]){
           setwords.splice( setwords.indexOf(word), 1 );
           //Find the index position of the current "word" then remove one element from that position
-          word = clearButton(word);
-          return word;
+          clearButton(word);
+          $(".display_letters").html(word);
+          word_select = "";
           // reread splice
           // remove word from array
           // display_word(word);
+        }else if(setwords == []){
+
+        }else {
+          
         }
       }
     }

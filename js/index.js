@@ -9,13 +9,12 @@ $(document).ready(function() {
     var letters = ["N","O", "U", "T"];
     var word_select = "";
     $(letters).each(function(index, letter){
-      $("#words").append("<li><h3>" + letter + "</h3></li>");
+      $("#words").append("<li>" + letter + "</li>");
     });
 
     link_words();
 
     function link_words(){
-
       $("li").click(function(){
         word_select += String(this.innerText);
         $(".display_letters").html(word_select);
@@ -37,36 +36,59 @@ $(document).ready(function() {
       return word;
     }
 
-    // function splitWord(word){
-    //   for (var i = 0; i < word.length; i++) {
-    //     return word.charAt(i);
-    //   }
-    // }
-
     function checkWord(word){
       for (var i = 0; i < setwords.length; i++) {
         if (word == setwords[i]){
-
           setwords.splice( setwords.indexOf(word), 1 );
           //Find the index position of the current "word" then remove one element from that position
+          display_word(word);
           clearButton(word);
           $(".display_letters").html(word);
           word_select = "";
           // reread splice
           // remove word from array
-          // display_word(word);
         }else if(setwords == []){
-
-
-        }else {
-
+          alert("Puzzle Completed");
+        }else if(word.length > 4){
+          word_select = "";
         }
       }
     }
 
-    function display_word(display){
-
+    function timer(){
+// setInterval
     }
 
+    function score(){
+      
+    }
+
+
+    function display_word(word) {
+        switch (word) {
+          case "NUT":
+          $(".nut").css("color", "#000000");
+          break;
+
+          case "NOT":
+          $(".not").css("color", "#000000");
+          break;
+
+          case "TON":
+          $(".ton").css("color", "#000000");
+          break;
+
+          case "OUT":
+          $(".out").css("color", "#000000");
+          break;
+
+          case "UNTO":
+          $(".unto").css("color", "#000000");
+
+          break;
+          default:
+
+      }
+    }
   }
 });

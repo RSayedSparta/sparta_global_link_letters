@@ -1,6 +1,21 @@
+span{
+  border-style: dashed;
+  padding: 10px;
+}
+
 .letters{
   text-decoration: none;
+}
 
+.letters li{
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #DDDDDD;
+  border-style: solid;
+  border-color: #AAAAAA;
+  padding: 22px;
 }
 
 .grid{
@@ -16,12 +31,8 @@
   list-style: none;
 }
 
-
-
 .not, .ton, .out, .nut, .unto{
   border-style: solid;
-}
-
-.row.not{
-
+  border-color: #000000;
+  color: #FFFFFF;
 }

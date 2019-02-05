@@ -3,8 +3,9 @@
 
 }
 
-.gridArray{
-  
+.grid{
+  font-size: 50px;
+  text-align: center;
 }
 
 .display_letters{
@@ -13,4 +14,14 @@
 
 #words{
   list-style: none;
+}
+
+
+
+.not, .ton, .out, .nut, .unto{
+  border-style: solid;
+}
+
+.row.not{
+
 }

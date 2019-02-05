@@ -2,19 +2,14 @@ $(document).ready(function() {
 
   init();
 
-  //   var items = [
-  //   [" ", " ", " ", " "],
-  //   [" ", " ", " ", " "],
-  //   [" ", " ", " ", " "],
-  //   [" ", " ", " ", " "]
-  // ];
+
 
   function init(){
-    var setwords = ["NOT","OUT","NUT","UNTO"];
+    var setwords = ["NOT","OUT","NUT","UNTO","TON"];
     var letters = ["N","O", "U", "T"];
     var word_select = "";
     $(letters).each(function(index, letter){
-      $("#words").append("<li>" + letter + "</li>");
+      $("#words").append("<li><h3>" + letter + "</h3></li>");
     });
 
     link_words();
@@ -51,6 +46,7 @@ $(document).ready(function() {
     function checkWord(word){
       for (var i = 0; i < setwords.length; i++) {
         if (word == setwords[i]){
+
           setwords.splice( setwords.indexOf(word), 1 );
           //Find the index position of the current "word" then remove one element from that position
           clearButton(word);
@@ -61,8 +57,9 @@ $(document).ready(function() {
           // display_word(word);
         }else if(setwords == []){
 
+
         }else {
-          
+
         }
       }
     }

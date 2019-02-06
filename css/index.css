@@ -13,9 +13,14 @@ button{
     outline: none;
 }
 
+.footer{
+	padding: 30px;
+	padding-top: 30px;
+}
+
 .letters{
   text-decoration: none;
-	padding: 50px;
+	padding: 20px;
 
 }
 
@@ -26,7 +31,7 @@ button{
 }
 
 .display_letters{
-	 padding: 50px;
+	 padding: 20px;
 	 font-size: 30px;
 	 text-align: center;
 }

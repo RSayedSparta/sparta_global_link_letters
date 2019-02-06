@@ -9,13 +9,14 @@ $(document).ready(function() {
     var letters = ["N","O", "U", "T"];
     var word_select = "";
     $(letters).each(function(index, letter){
-      $("#words").append("<li>" + letter + "</li>");
+      $("#words").append("<button class= 'Button btn from-top'>" + letter + "</button>");
     });
 
     link_words();
 
     function link_words(){
-      $("li").click(function(){
+      $(".Button").click(function(){
+
         word_select += String(this.innerText);
         $(".display_letters").html(word_select);
         console.log(word_select);
@@ -24,7 +25,7 @@ $(document).ready(function() {
       });
 
 
-      $("button").click(function(){
+      $(".clear").click(function(){
         word_select = clearButton(word_select);
       });
     }
@@ -38,6 +39,8 @@ $(document).ready(function() {
 
     function checkWord(word){
       for (var i = 0; i < setwords.length; i++) {
+        var n = setwords[i].localeCompare(word);
+        if (n != 1){
         if (word == setwords[i]){
           setwords.splice( setwords.indexOf(word), 1 );
           //Find the index position of the current "word" then remove one element from that position
@@ -49,9 +52,10 @@ $(document).ready(function() {
           // remove word from array
         }else if(setwords == []){
           alert("Puzzle Completed");
-        }else if(word.length > 4){
-          word_select = "";
+        }else if(word.length > 3){
+              word_select = "";
         }
+      }
       }
     }
 
@@ -60,7 +64,7 @@ $(document).ready(function() {
     }
 
     function score(){
-      
+
     }
 
 

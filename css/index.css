@@ -236,3 +236,12 @@ body {
 	font-family: Andale Mono, monospace;
 
 }
+
+.footer{
+	font-size: 20px;
+}
+
+.endGame{
+	text-align: center;
+	padding-top: 25%;
+}

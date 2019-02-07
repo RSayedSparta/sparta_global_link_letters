@@ -5,23 +5,27 @@ h1{
 }
 
 button{
- background: rgba(0,0,0,0);
- font-size: 20px;
+	background: rgba(0,0,0,0);
+	font-size: 20px;
 }
 
 .description{
 	text-align: center;
-	padding: 20%;
+	padding: 14%;
 
 }
 
+.levels{
+	padding-top: 10%;
+}
+
 .text{
-	font-size: 15px;
+	font-size: 18px;
 
 }
 
 *:focus {
-    outline: none;
+	outline: none;
 }
 
 .footer{
@@ -31,21 +35,21 @@ button{
 }
 
 .letters{
-  text-decoration: none;
+	text-decoration: none;
 	padding: 20px;
 
 }
 
 .grid{
-  font-size: 50px;
-  text-align: center;
+	font-size: 50px;
+	text-align: center;
 	padding: 30px;
 }
 
 .display_letters{
-	 padding: 20px;
-	 font-size: 30px;
-	 text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
 }
 
 .clear{
@@ -53,18 +57,18 @@ button{
 	border-style: none;
 }
 /* #words{
-  list-style: none;
+list-style: none;
 } */
 
-.not, .ton, .out, .nut, .unto{
-  border-style: solid;
+.not, .ton, .out, .nut, .unto, .see,
+.secure, .curse, .reuse, .cure, .seer,
+.sure, .cue, .use, .user, .rue, .rescue{
+	border-style: solid;
 	border-width: thin;
 	border-radius: 10px;
-  border-color:  rgba(0,0,0,1);
-  color: rgba(0, 0, 0, 0);
-
+	border-color:  rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 0);
 }
-
 
 .btn {
 	position: relative;

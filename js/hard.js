@@ -3,13 +3,13 @@ $(document).ready(function() {
   init();
 
   function init(){
-    var setwords = ["NOT","OUT","NUT","UNTO","TON"];
-    var letters = ["N","O", "U", "T"];
+    var setwords = ["SECURE","SEE","REUSE","CURE","SEER","CUE","USE","SURE","RUE","RESCUE","USER", "CURSE"];
+    var letters = [ "R", "S", "U", "E", "C", "E"];
     var word_select = "";
     var points = 0;
 
     $(letters).each(function(index, letter){
-      $("#words").append("<button class= 'Button btn from-top'>" + letter + "</button>");
+      $("#words").append("<button class='Button btn from-top'>" + letter + "</button>");
     });
 
     link_words();
@@ -52,7 +52,7 @@ $(document).ready(function() {
             word_select = "";
             // reread splice
             // remove word from array
-          }else if(word.length > 3){
+          }else if(word.length > 5){
             word_select = "";
           }
         }
@@ -80,20 +80,41 @@ $(document).ready(function() {
 
         function display_word(word) {
           switch (word) {
-            case "NUT":
-            $(".nut").css("color", "#000000");
+            case "SECURE":
+            $(".secure").css("color", "#000000");
             break;
-            case "NOT":
-            $(".not").css("color", "#000000");
+            case "SEE":
+            $(".see").css("color", "#000000");
             break;
-            case "TON":
-            $(".ton").css("color", "#000000");
+            case "REUSE":
+            $(".reuse").css("color", "#000000");
             break;
-            case "OUT":
-            $(".out").css("color", "#000000");
+            case "CURE":
+            $(".cure").css("color", "#000000");
             break;
-            case "UNTO":
-            $(".unto").css("color", "#000000");
+            case "SEER":
+            $(".seer").css("color", "#000000");
+            break;
+            case "CUE":
+            $(".cue").css("color", "#000000");
+            break;
+            case "USE":
+            $(".use").css("color", "#000000");
+            break;
+            case "SURE":
+            $(".sure").css("color", "#000000");
+            break;
+            case "RUE":
+            $(".rue").css("color", "#000000");
+            break;
+            case "RESCUE":
+            $(".rescue").css("color", "#000000");
+            break;
+            case "USER":
+            $(".user").css("color", "#000000");
+            break;
+            case "CURSE":
+            $(".curse").css("color", "#000000");
             break;
             default:
 

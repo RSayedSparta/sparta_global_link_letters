@@ -47,6 +47,7 @@ $(document).ready(function() {
           if(setwords.length == 0){
             $(".container").html(
               "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
+              mStorage.setItem("keyMedium", points);
             }
             $(".display_letters").html(word);
             word_select = "";
@@ -68,6 +69,7 @@ $(document).ready(function() {
             clearInterval(CountDown);
             $(".container").html(
               "<div class='endGame'> <div><a class='btn from-middle' href='index.html'><button ><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
+              mStorage.setItem("keyMedium", points);
             }
           }, 1000);
 
@@ -77,6 +79,8 @@ $(document).ready(function() {
           points++;
           $(".points").html("Current Score: " + points);
         }
+
+
 
         function display_word(word) {
           switch (word) {

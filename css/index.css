@@ -9,6 +9,10 @@ button{
 	font-size: 20px;
 }
 
+table{
+	width: 100%;
+}
+
 .description{
 	text-align: center;
 	padding: 12%;

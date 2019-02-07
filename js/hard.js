@@ -47,6 +47,7 @@ $(document).ready(function() {
           if(setwords.length == 0){
             $(".container").html(
               "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
+              hStorage.setItem("keyHard", points);
             }
             $(".display_letters").html(word);
             word_select = "";
@@ -68,9 +69,9 @@ $(document).ready(function() {
             clearInterval(CountDown);
             $(".container").html(
               "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
+              // HACK: Storage.setItem("keyHard", points);
             }
           }, 1000);
-
         }
 
         function score(){

@@ -9,6 +9,17 @@ button{
  font-size: 20px;
 }
 
+.description{
+	text-align: center;
+	padding: 20%;
+
+}
+
+.text{
+	font-size: 15px;
+
+}
+
 *:focus {
     outline: none;
 }
@@ -16,6 +27,7 @@ button{
 .footer{
 	padding: 30px;
 	padding-top: 30px;
+	font-size: 20px;
 }
 
 .letters{
@@ -235,10 +247,6 @@ body {
 	background-image: linear-gradient(-25deg, #C16161 20%, #96BFC4 80%);
 	font-family: Andale Mono, monospace;
 
-}
-
-.footer{
-	font-size: 20px;
 }
 
 .endGame{

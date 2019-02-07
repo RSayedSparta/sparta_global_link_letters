@@ -49,7 +49,8 @@ $(document).ready(function() {
           display_word(word);
           clearButton(word);
           if(setwords.length == 0){
-            timer(1);
+            $(".container").html(
+              "<div class='endGame'> <div><h1>GAME OVER</h1></div> <div><p>Your score: " + points + " </p></div>");
           }
           $(".display_letters").html(word);
           word_select = "";
@@ -70,10 +71,10 @@ $(document).ready(function() {
         if(counter != 0){
           counter--;
           $(".timer").html("Time left: " + counter);
-        }else if(counter == 0 || complete == 1){
+        }else if(counter == 0){
           clearInterval(CountDown);
           $(".container").html(
-            "<div class='endGame'> <div><h1>GAME OVER</h1></div> <div><p>Your score: " + points + " </p><p>Time taken: " + counter + "</p> </div>");
+            "<div class='endGame'> <div><h1>GAME OVER</h1></div> <div><p>Your score: " + points + " </p></div>");
         }
       }, 1000);
 
@@ -88,25 +89,19 @@ $(document).ready(function() {
     function display_word(word) {
       switch (word) {
         case "NUT":
-        $(".nut").css("color", "#2253CB");
-        //  $(".nut").css();
+        $(".nut").css("color", "#1131A9");
         break;
-
         case "NOT":
-        $(".not").css("color", "#2253CB");
+        $(".not").css("color", "#1131A9");
         break;
-
         case "TON":
-        $(".ton").css("color", "#2253CB");
+        $(".ton").css("color", "#1131A9");
         break;
-
         case "OUT":
-        $(".out").css("color", "#2253CB");
+        $(".out").css("color", "#1131A9");
         break;
-
         case "UNTO":
-        $(".unto").css("color", "#2253CB");
-
+        $(".unto").css("color", "#1131A9");
         break;
         default:
 

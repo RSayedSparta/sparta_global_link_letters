@@ -11,8 +11,7 @@ button{
 
 .description{
 	text-align: center;
-	padding: 14%;
-
+	padding: 12%;
 }
 
 .levels{
@@ -55,11 +54,11 @@ button{
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
+	height:50px;
 }
 
 .clear{
 	padding: 50px;
-	border-style: none;
 }
 /* #words{
 list-style: none;

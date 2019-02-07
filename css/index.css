@@ -19,6 +19,11 @@ button{
 	padding-top: 10%;
 }
 
+.score{
+	padding: 10px;
+	font-size: 20px;
+}
+
 .text{
 	font-size: 18px;
 
@@ -62,7 +67,9 @@ list-style: none;
 
 .not, .ton, .out, .nut, .unto, .see,
 .secure, .curse, .reuse, .cure, .seer,
-.sure, .cue, .use, .user, .rue, .rescue{
+.sure, .cue, .use, .user, .rue, .rescue,
+.thee, .there, .here, .tree, .her, .three,
+.the{
 	border-style: solid;
 	border-width: thin;
 	border-radius: 10px;
@@ -104,7 +111,6 @@ list-style: none;
 	transition-delay: .4s;
 }
 
-/* From Top */
 
 .from-top:before,
 .from-top:after {
@@ -130,8 +136,6 @@ list-style: none;
 	height: 100%;
 }
 
-/* From Left */
-
 .from-left:before,
 .from-left:after {
 	top: 0;
@@ -155,7 +159,6 @@ list-style: none;
 	width: 100%;
 }
 
-/* From Right */
 
 .from-right:before,
 .from-right:after {
@@ -180,7 +183,6 @@ list-style: none;
 	width: 100%;
 }
 
-/* From Middle */
 
 .from-middle:before {
 	top: 0;
@@ -210,8 +212,6 @@ list-style: none;
 	height: 100%;
 }
 
-/* From Bottom */
-
 .from-bottom:before,
 .from-bottom:after {
 	left: 0;
@@ -236,9 +236,6 @@ list-style: none;
 	height: 100%;
 }
 
-
-/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
-
 *, *:before, *:after {
 	box-sizing: border-box;
 }
@@ -250,7 +247,6 @@ body {
 	width: 100%;
 	background-image: linear-gradient(-25deg, #C16161 20%, #96BFC4 80%);
 	font-family: Andale Mono, monospace;
-
 }
 
 .endGame{

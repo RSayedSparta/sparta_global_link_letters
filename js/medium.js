@@ -3,8 +3,8 @@ $(document).ready(function() {
   init();
 
   function init(){
-    var setwords = ["NOT","OUT","NUT","UNTO","TON"];
-    var letters = ["N","O", "U", "T"];
+    var setwords = ["THERE","THEE","HERE","HER","TREE", "THREE", "THE"];
+    var letters = ["E","H", "E", "R" ,"T"];
     var word_select = "";
     var points = 0;
 
@@ -46,13 +46,13 @@ $(document).ready(function() {
           clearButton(word);
           if(setwords.length == 0){
             $(".container").html(
-              "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1><button></a></div> <div><p>Your score: " + points + " </p></div>");
+              "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
             }
             $(".display_letters").html(word);
             word_select = "";
             // reread splice
             // remove word from array
-          }else if(word.length > 3){
+          }else if(word.length > 4){
             word_select = "";
           }
         }
@@ -67,7 +67,7 @@ $(document).ready(function() {
           }else if(counter == 0){
             clearInterval(CountDown);
             $(".container").html(
-              "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1><button></a></div> <div><p>Your score: " + points + " </p></div>");
+              "<div class='endGame'> <div><a class='btn from-middle' href='index.html'><button ><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
             }
           }, 1000);
 
@@ -80,21 +80,28 @@ $(document).ready(function() {
 
         function display_word(word) {
           switch (word) {
-            case "NUT":
-            $(".nut").css("color", "#000000");
+            case "THEE":
+            $(".thee").css("color", "#000000");
             break;
-            case "NOT":
-            $(".not").css("color", "#000000");
+            case "THERE":
+            $(".there").css("color", "#000000");
             break;
-            case "TON":
-            $(".ton").css("color", "#000000");
+            case "HERE":
+            $(".here").css("color", "#000000");
             break;
-            case "OUT":
-            $(".out").css("color", "#000000");
+            case "TREE":
+            $(".tree").css("color", "#000000");
             break;
-            case "UNTO":
-            $(".unto").css("color", "#000000");
+            case "HER":
+            $(".her").css("color", "#000000");
             break;
+            case "THREE":
+            $(".three").css("color", "#000000");
+            break;
+            case "THE":
+            $(".the").css("color", "#000000");
+            break;
+
             default:
 
           }

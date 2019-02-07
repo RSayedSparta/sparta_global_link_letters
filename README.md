@@ -1,1 +1,2 @@
-# sparta_global_link_letters
+
+Welcome to LINK IT! This is a word search game, the main aim of this game is to link the letters that are displayed to create a word. Clicking the letters will enable you to select that letter, a grid of empty boxes will show you what words you have found or blank . Some words are aligned vertically on the grid, the start of the word always starts from the top. You have to clear the stage within the time limit to score maximum points. Good luck!

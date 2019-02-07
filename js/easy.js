@@ -7,6 +7,7 @@ $(document).ready(function() {
     var letters = ["N","O", "U", "T"];
     var word_select = "";
     var points = 0;
+    var name = prompt("Please enter your name");
 
     $(letters).each(function(index, letter){
       $("#words").append("<button class= 'Button btn from-top'>" + letter + "</button>");
@@ -47,7 +48,7 @@ $(document).ready(function() {
           if(setwords.length == 0){
             $(".container").html(
               "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
-              eStorage.setItem("keyEasy", points);
+              localStorage.setItem("keyEasy", name + " : points = " + points);
             }
             $(".display_letters").html(word);
             word_select = "";
@@ -59,7 +60,7 @@ $(document).ready(function() {
         }
       }
 
-      function timer(complete){
+      function timer(){
         var counter = 100;
         var CountDown = setInterval(function(){
           if(counter != 0){
@@ -69,7 +70,7 @@ $(document).ready(function() {
             clearInterval(CountDown);
             $(".container").html(
               "<div class='endGame'> <div><a href='index.html'><button class='btn from-middle'><h1>GAME OVER</h1></button></a></div> <div class ='score'><p>Your score: " + points + " </p></div>");
-              eStorage.setItem("keyEasy",points);
+              localStorage.setItem("keyEasy",name + " : points = " + points);
             }
           }, 1000);
 

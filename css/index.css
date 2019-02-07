@@ -13,6 +13,14 @@ table{
 	width: 100%;
 }
 
+li{
+	list-style-type: none;
+}
+
+.easy, .medium, .hard{
+	text-align: center;
+}
+
 .description{
 	text-align: center;
 	padding: 12%;
@@ -255,4 +263,9 @@ body {
 .endGame{
 	text-align: center;
 	padding-top: 25%;
+}
+
+#heading{
+	font-weight: bold;
+	font-size: 18px;
 }

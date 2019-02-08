@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
+
+
   init();
 
   function init(){
+
     var setwords = ["SECURE","SEE","REUSE","CURE","SEER","CUE","USE","SURE","RUE","RESCUE","USER", "CURSE"];
     var letters = [ "R", "S", "U", "E", "C", "E"];
     var word_select = "";

@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
+
+
   init();
 
   function init(){
+
     var setwords = ["NOT","OUT","NUT","UNTO","TON"];
     var letters = ["N","O", "U", "T"];
     var word_select = "";

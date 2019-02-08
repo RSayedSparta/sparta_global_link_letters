@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
+
   init();
 
   function init(){
+
     var setwords = ["THERE","THEE","HERE","HER","TREE", "THREE", "THE"];
     var letters = ["E","H", "E", "R" ,"T"];
     var word_select = "";
